@@ -126,7 +126,7 @@ fun LoginScreen(navController: NavController) {
                     checked = checkBox, onCheckedChange = {
                         checkBox = it
                     },
-                    colors = CheckboxDefaults.colors(checkedColor = MaterialTheme.colors.PrimaryColor)
+                    colors = CheckboxDefaults.colors(checkedColor = MaterialTheme.colors.primary)
                 )
                 Text(text = "Remember me", color = MaterialTheme.colors.TextColor, fontSize = 14.sp)
             }
