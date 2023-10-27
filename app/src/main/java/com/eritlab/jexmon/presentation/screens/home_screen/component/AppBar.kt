@@ -22,8 +22,8 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.navigation.NavController
 import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.graphs.home_graph.ShopHomeScreen
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
 
 @Composable
 fun AppBar(
@@ -61,13 +61,13 @@ fun AppBar(
                 colors = TextFieldDefaults.outlinedTextFieldColors(
                     focusedBorderColor = Color.Transparent,
                     unfocusedBorderColor = Color.Transparent,
-                    cursorColor = MaterialTheme.colors.PrimaryColor
+                    cursorColor = MaterialTheme.colors.primary
                 ),
 
 
                 modifier = Modifier
                     .background(
-                        color = MaterialTheme.colors.PrimaryLightColor,
+                        color = MaterialTheme.colors.surface,
                         shape = RoundedCornerShape(20.dp)
                     )
                     .weight(1f),
@@ -78,7 +78,7 @@ fun AppBar(
                 modifier = Modifier
                     .size(48.dp)
                     .clip(CircleShape)
-                    .background(MaterialTheme.colors.PrimaryLightColor)
+                    .background(MaterialTheme.colors.surface)
                     .clickable {
                         onCartIconClick()
                     },
@@ -96,7 +96,7 @@ fun AppBar(
                     modifier = Modifier
                         .size(48.dp)
                         .clip(CircleShape)
-                        .background(MaterialTheme.colors.PrimaryLightColor)
+                        .background(MaterialTheme.colors.surface)
                         .constrainAs(notification) {}
                         .clickable {
                             onNotificationIconClick()

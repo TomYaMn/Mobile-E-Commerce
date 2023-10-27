@@ -26,9 +26,9 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.HorizontalAnchorable
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
 import com.eritlab.jexmon.R
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
 
 @Composable
 fun ProfileScreen(
@@ -53,7 +53,7 @@ fun ProfileScreen(
             Box(modifier = Modifier.weight(0.7f)) {
                 Text(
                     text = "Profile",
-                    color = MaterialTheme.colors.TextColor,
+                    color = MaterialTheme.colors.onPrimary,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
@@ -109,14 +109,14 @@ fun ProfileScreen(
             Icon(
                 painter = painterResource(id = R.drawable.user_icon),
                 contentDescription = null,
-                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.PrimaryColor
+                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.primary
             )
             Text("Profile Picture", modifier = Modifier.weight(0.2f))
             Icon(
                 painter = painterResource(id = R.drawable.arrow_right),
                 contentDescription = null,
                 modifier = Modifier.weight(0.05f),
-                tint = MaterialTheme.colors.TextColor
+                tint = MaterialTheme.colors.onPrimary
             )
         }
 
@@ -140,14 +140,14 @@ fun ProfileScreen(
             Icon(
                 painter = painterResource(id = R.drawable.bell),
                 contentDescription = null,
-                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.PrimaryColor
+                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.primary
             )
             Text("Notification", modifier = Modifier.weight(0.2f))
             Icon(
                 painter = painterResource(id = R.drawable.arrow_right),
                 contentDescription = null,
                 modifier = Modifier.weight(0.05f),
-                tint = MaterialTheme.colors.TextColor
+                tint = MaterialTheme.colors.onPrimary
             )
         }
 
@@ -172,14 +172,14 @@ fun ProfileScreen(
             Icon(
                 painter = painterResource(id = R.drawable.settings),
                 contentDescription = null,
-                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.PrimaryColor
+                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.primary
             )
             Text("Settings", modifier = Modifier.weight(0.2f))
             Icon(
                 painter = painterResource(id = R.drawable.arrow_right),
                 contentDescription = null,
                 modifier = Modifier.weight(0.05f),
-                tint = MaterialTheme.colors.TextColor
+                tint = MaterialTheme.colors.onPrimary
             )
         }
 
@@ -204,14 +204,14 @@ fun ProfileScreen(
             Icon(
                 painter = painterResource(id = R.drawable.question_mark),
                 contentDescription = null,
-                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.PrimaryColor
+                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.primary
             )
             Text("Help Center", modifier = Modifier.weight(0.2f))
             Icon(
                 painter = painterResource(id = R.drawable.arrow_right),
                 contentDescription = null,
                 modifier = Modifier.weight(0.05f),
-                tint = MaterialTheme.colors.TextColor
+                tint = MaterialTheme.colors.onPrimary
             )
         }
 
@@ -234,14 +234,14 @@ fun ProfileScreen(
             Icon(
                 painter = painterResource(id = R.drawable.log_out),
                 contentDescription = null,
-                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.PrimaryColor
+                modifier = Modifier.weight(0.05f), tint = MaterialTheme.colors.primary
             )
             Text("Logout", modifier = Modifier.weight(0.2f))
             Icon(
                 painter = painterResource(id = R.drawable.arrow_right),
                 contentDescription = null,
                 modifier = Modifier.weight(0.05f),
-                tint = MaterialTheme.colors.TextColor
+                tint = MaterialTheme.colors.onPrimary
             )
         }
 

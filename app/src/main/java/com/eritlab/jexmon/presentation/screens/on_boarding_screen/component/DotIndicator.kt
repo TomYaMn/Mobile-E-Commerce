@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
 
 
 @Composable
@@ -27,7 +27,7 @@ fun DotIndicator(totalDots: Int, selectedIndex: Int) {
                     modifier = Modifier
                         .size(height = 7.dp, width = 15.dp)
                         .clip(CircleShape)
-                        .background(color = MaterialTheme.colors.PrimaryColor)
+                        .background(color = MaterialTheme.colors.primary)
                 )
             } else {
                 Box(

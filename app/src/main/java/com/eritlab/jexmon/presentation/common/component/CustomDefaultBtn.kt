@@ -14,7 +14,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
 
 @Composable
 fun CustomDefaultBtn(
@@ -32,7 +32,7 @@ fun CustomDefaultBtn(
             onClick()
         },
         colors = ButtonDefaults.buttonColors(
-            backgroundColor = MaterialTheme.colors.PrimaryColor,
+            backgroundColor = MaterialTheme.colors.primary,
             contentColor = Color.White
         ),
     ) {

@@ -17,8 +17,8 @@ import com.eritlab.jexmon.common.Constrains
 import com.eritlab.jexmon.presentation.graphs.detail_graph.DetailScreen
 import com.eritlab.jexmon.presentation.graphs.home_graph.ShopHomeScreen
 import com.eritlab.jexmon.presentation.screens.home_screen.BottomNavItem
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 @Composable
 fun NavigationBar(
@@ -54,14 +54,14 @@ fun NavigationBar(
                         Icon(
                             painter = painterResource(id = screen.icon),
                             contentDescription = null,
-                            tint = if (navBackStackEntry?.destination?.route == screen.route) MaterialTheme.colors.PrimaryColor else LocalContentColor.current,
+                            tint = if (navBackStackEntry?.destination?.route == screen.route) MaterialTheme.colors.primary else LocalContentColor.current,
                         )
                     },
                     //  label = { Text(text = screen.tittle) },
                     onClick = {
                         navController.navigate(screen.route)
                     },
-                    unselectedContentColor = MaterialTheme.colors.TextColor,
+                    unselectedContentColor = MaterialTheme.colors.onPrimary,
                 )
             }
         }

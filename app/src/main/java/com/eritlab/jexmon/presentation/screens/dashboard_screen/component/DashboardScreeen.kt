@@ -33,10 +33,10 @@ import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.graphs.Graph
 import com.eritlab.jexmon.presentation.graphs.detail_graph.DetailScreen
 import com.eritlab.jexmon.presentation.screens.dashboard_screen.DashboardViewModel
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
-import com.eritlab.jexmon.presentation.ui.theme.SecondaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.SecondaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 import dagger.hilt.android.lifecycle.HiltViewModel
 
 @Composable
@@ -84,7 +84,7 @@ fun DashboardScreen(
                     contentDescription = "Flash Deal",
                     modifier = Modifier
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = RoundedCornerShape(10.dp)
                         )
                         .size(50.dp)
@@ -110,7 +110,7 @@ fun DashboardScreen(
                     contentDescription = "Bill",
                     modifier = Modifier
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = RoundedCornerShape(10.dp)
                         )
                         .size(50.dp)
@@ -137,7 +137,7 @@ fun DashboardScreen(
                     contentDescription = "Game",
                     modifier = Modifier
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = RoundedCornerShape(10.dp)
                         )
                         .size(50.dp)
@@ -163,7 +163,7 @@ fun DashboardScreen(
                     contentDescription = "Daily Gift",
                     modifier = Modifier
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = RoundedCornerShape(10.dp)
                         )
                         .size(50.dp)
@@ -190,7 +190,7 @@ fun DashboardScreen(
                     contentDescription = "More",
                     modifier = Modifier
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = RoundedCornerShape(10.dp)
                         )
                         .size(50.dp)
@@ -211,7 +211,7 @@ fun DashboardScreen(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = "Special for you", fontWeight = FontWeight.Bold, fontSize = 16.sp)
-            Text(text = "See More", color = MaterialTheme.colors.TextColor)
+            Text(text = "See More", color = MaterialTheme.colors.onPrimary)
         }
 
         Spacer(modifier = Modifier.height(15.dp))
@@ -309,7 +309,7 @@ fun DashboardScreen(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = "Popular Product", fontWeight = FontWeight.Bold, fontSize = 16.sp)
-            Text(text = "See More", color = MaterialTheme.colors.TextColor)
+            Text(text = "See More", color = MaterialTheme.colors.onPrimary)
         }
 
         Spacer(modifier = Modifier.height(8.dp))
@@ -359,13 +359,13 @@ fun DashboardScreen(
                         Text(
                             text = "$ ${state.product[it].price}",
                             fontWeight = FontWeight(600),
-                            color = MaterialTheme.colors.PrimaryColor
+                            color = MaterialTheme.colors.primary
                         )
                         Box(
                             modifier = Modifier
                                 .size(20.dp)
                                 .background(
-                                    MaterialTheme.colors.PrimaryLightColor,
+                                    MaterialTheme.colors.surface,
                                     shape = CircleShape
                                 )
                                 .clip(CircleShape)

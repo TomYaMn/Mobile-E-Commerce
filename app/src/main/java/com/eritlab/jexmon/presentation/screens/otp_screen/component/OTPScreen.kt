@@ -25,8 +25,8 @@ import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
 import com.eritlab.jexmon.presentation.graphs.auth_graph.AuthScreen
 import com.eritlab.jexmon.presentation.screens.sign_in_screen.component.OTPTexField
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @Composable
@@ -76,7 +76,7 @@ fun OTPScreen(navController: NavController) {
             Box(modifier = Modifier.weight(1.0f)) {
                 Text(
                     text = "OTP Verification",
-                    color = MaterialTheme.colors.TextColor,
+                    color = MaterialTheme.colors.onPrimary,
                     fontSize = 18.sp,
                     fontWeight = FontWeight(700)
                 )
@@ -90,13 +90,13 @@ fun OTPScreen(navController: NavController) {
                 withStyle(
                     style = SpanStyle(
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.PrimaryColor,
+                        color = MaterialTheme.colors.primary,
                     )
                 ) {
                     append("120s")
                 }
             },
-            color = MaterialTheme.colors.TextColor,
+            color = MaterialTheme.colors.onPrimary,
             textAlign = TextAlign.Center
         )
 
@@ -153,7 +153,7 @@ fun OTPScreen(navController: NavController) {
         Text(
             text = "Resend OTP Code",
             style = TextStyle(textDecoration = TextDecoration.Underline),
-            color = MaterialTheme.colors.TextColor,
+            color = MaterialTheme.colors.onPrimary,
             fontWeight = FontWeight(500),
             modifier = Modifier.clickable {
 

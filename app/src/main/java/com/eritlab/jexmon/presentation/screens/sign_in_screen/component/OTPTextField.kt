@@ -23,8 +23,8 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable
@@ -43,9 +43,9 @@ fun OTPTexField(focusRequester: FocusRequester, onChanged: (TextFieldValue) -> U
         singleLine = true,
         colors = TextFieldDefaults.outlinedTextFieldColors(
             cursorColor = Color.Transparent,
-            focusedBorderColor = MaterialTheme.colors.PrimaryColor,
-            focusedLabelColor = MaterialTheme.colors.PrimaryColor,
-            textColor = MaterialTheme.colors.TextColor
+            focusedBorderColor = MaterialTheme.colors.primary,
+            focusedLabelColor = MaterialTheme.colors.primary,
+            textColor = MaterialTheme.colors.onPrimary
         ),
         keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.NumberPassword),
         maxLines = 1,

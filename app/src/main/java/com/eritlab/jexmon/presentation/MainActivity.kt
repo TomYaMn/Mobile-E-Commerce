@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
 import com.eritlab.jexmon.presentation.graphs.root_graph.RootNavigationGraph
-import com.eritlab.jexmon.presentation.ui.theme.JexmonTheme
+import com.eritlab.jexmon.presentation.ui.theme.TomYumTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,11 +20,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JexmonTheme {
+            TomYumTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colors.surface
+
                 ) {
                     ShowScreen(LocalContext.current)
                 }

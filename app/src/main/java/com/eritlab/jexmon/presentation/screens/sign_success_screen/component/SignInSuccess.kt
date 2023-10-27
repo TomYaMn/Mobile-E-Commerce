@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.graphs.Graph
 
@@ -32,7 +32,7 @@ fun SignInScreen(navController: NavController) {
         ) {
             Text(
                 text = "Login Success",
-                color = MaterialTheme.colors.TextColor,
+                color = MaterialTheme.colors.onPrimary,
                 fontWeight = FontWeight(700),
                 fontSize = 18.sp
             )

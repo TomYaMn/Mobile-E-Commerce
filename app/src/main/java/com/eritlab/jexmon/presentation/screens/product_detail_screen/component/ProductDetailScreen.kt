@@ -30,9 +30,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
 import com.eritlab.jexmon.presentation.screens.product_detail_screen.ProductDetailViewModel
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 @Composable
 fun ProductDetailScreen(
@@ -129,7 +129,7 @@ fun ProductDetailScreen(
                             .size(50.dp)
                             .border(
                                 width = 1.dp,
-                                color = if (selectedPicture == product.images[it]) MaterialTheme.colors.PrimaryColor else Color.Transparent,
+                                color = if (selectedPicture == product.images[it]) MaterialTheme.colors.primary else Color.Transparent,
                                 shape = RoundedCornerShape(10.dp)
                             )
                             .background(Color.White, shape = RoundedCornerShape(10.dp))
@@ -177,7 +177,7 @@ fun ProductDetailScreen(
                         Text(
                             text = product.description,
                             fontSize = 16.sp,
-                            color = MaterialTheme.colors.TextColor
+                            color = MaterialTheme.colors.onPrimary
                         )
                         Spacer(modifier = Modifier.height(25.dp))
                         Row(
@@ -186,14 +186,14 @@ fun ProductDetailScreen(
                         ) {
                             Text(
                                 text = "See more Details",
-                                color = MaterialTheme.colors.PrimaryColor,
+                                color = MaterialTheme.colors.primary,
                                 fontSize = 16.sp,
 
                                 )
                             Icon(
                                 painter = painterResource(id = R.drawable.arrow_right),
                                 contentDescription = "",
-                                tint = MaterialTheme.colors.PrimaryColor
+                                tint = MaterialTheme.colors.primary
                             )
                         }
 
@@ -238,7 +238,7 @@ fun ProductDetailScreen(
                                     .size(30.dp)
                                     .border(
                                         width = 1.dp,
-                                        color = if (colorSelected == product.colors[it]) MaterialTheme.colors.PrimaryColor else Color.Transparent,
+                                        color = if (colorSelected == product.colors[it]) MaterialTheme.colors.primary else Color.Transparent,
                                         shape = CircleShape
                                     )
                                     .padding(5.dp)
@@ -315,7 +315,7 @@ fun ProductDetailScreen(
                 ) {
                     Button(
                         colors = ButtonDefaults.buttonColors(
-                            backgroundColor = MaterialTheme.colors.PrimaryColor,
+                            backgroundColor = MaterialTheme.colors.primary,
                             contentColor = Color.White
                         ),
                         modifier = Modifier

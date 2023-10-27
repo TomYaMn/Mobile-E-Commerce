@@ -28,11 +28,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
 import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @Preview(showBackground = true)
@@ -67,14 +67,14 @@ fun CartScreen() {
                 ) {
                     Text(
                         text = "Your Cart",
-                        color = MaterialTheme.colors.TextColor,
+                        color = MaterialTheme.colors.onPrimary,
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold
                     )
                     Text(
                         text = "4 items",
                         textAlign = TextAlign.Center,
-                        color = MaterialTheme.colors.TextColor,
+                        color = MaterialTheme.colors.onPrimary,
                     )
 
                 }
@@ -124,10 +124,10 @@ fun CartScreen() {
                     Row() {
                         Text(
                             text = "$79.99",
-                            color = MaterialTheme.colors.PrimaryColor,
+                            color = MaterialTheme.colors.primary,
                             fontWeight = FontWeight.Bold
                         )
-                        Text(text = "  x1", color = MaterialTheme.colors.TextColor)
+                        Text(text = "  x1", color = MaterialTheme.colors.onPrimary)
                     }
                 }
             }
@@ -170,10 +170,10 @@ fun CartScreen() {
                     Row() {
                         Text(
                             text = "$100.25",
-                            color = MaterialTheme.colors.PrimaryColor,
+                            color = MaterialTheme.colors.primary,
                             fontWeight = FontWeight.Bold
                         )
-                        Text(text = "  x1", color = MaterialTheme.colors.TextColor)
+                        Text(text = "  x1", color = MaterialTheme.colors.onPrimary)
                     }
                 }
             }
@@ -212,10 +212,10 @@ fun CartScreen() {
                     Row() {
                         Text(
                             text = "$49.99",
-                            color = MaterialTheme.colors.PrimaryColor,
+                            color = MaterialTheme.colors.primary,
                             fontWeight = FontWeight.Bold
                         )
-                        Text(text = "  x1", color = MaterialTheme.colors.TextColor)
+                        Text(text = "  x1", color = MaterialTheme.colors.onPrimary)
                     }
                 }
             }
@@ -254,10 +254,10 @@ fun CartScreen() {
                     Row() {
                         Text(
                             text = "$36.55",
-                            color = MaterialTheme.colors.PrimaryColor,
+                            color = MaterialTheme.colors.primary,
                             fontWeight = FontWeight.Bold
                         )
-                        Text(text = "  x1", color = MaterialTheme.colors.TextColor)
+                        Text(text = "  x1", color = MaterialTheme.colors.onPrimary)
                     }
                 }
             }
@@ -277,7 +277,7 @@ fun CartScreen() {
                     end.linkTo(parent.end)
                 }
                 .background(
-                    color = MaterialTheme.colors.PrimaryLightColor,
+                    color = MaterialTheme.colors.surface,
                     shape = RoundedCornerShape(topStart = 15.dp, topEnd = 15.dp)
                 )
                 .clip(RoundedCornerShape(topStart = 15.dp, topEnd = 15.dp))
@@ -291,7 +291,7 @@ fun CartScreen() {
                 Icon(
                     painter = painterResource(id = R.drawable.receipt),
                     contentDescription = null,
-                    tint = MaterialTheme.colors.PrimaryColor,
+                    tint = MaterialTheme.colors.primary,
                     modifier = Modifier
                         .size(45.dp)
                         .background(Color(0x8DB3B0B0), shape = RoundedCornerShape(15.dp))
@@ -321,7 +321,7 @@ fun CartScreen() {
                         text = "$266.78",
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.PrimaryColor
+                        color = MaterialTheme.colors.primary
                     )
 
                 }

@@ -15,9 +15,9 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.eritlab.jexmon.R
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @Composable
@@ -52,11 +52,11 @@ fun CustomTextField(
         },
         singleLine = true,
         colors = TextFieldDefaults.outlinedTextFieldColors(
-            trailingIconColor = if (text.text.isNotEmpty()) MaterialTheme.colors.PrimaryColor else MaterialTheme.colors.TextColor,
-            cursorColor = MaterialTheme.colors.PrimaryColor,
-            focusedBorderColor = MaterialTheme.colors.PrimaryColor,
-            focusedLabelColor = MaterialTheme.colors.PrimaryColor,
-            textColor = MaterialTheme.colors.TextColor
+            trailingIconColor = if (text.text.isNotEmpty()) MaterialTheme.colors.primary else MaterialTheme.colors.onPrimary,
+            cursorColor = MaterialTheme.colors.primary,
+            focusedBorderColor = MaterialTheme.colors.primary,
+            focusedLabelColor = MaterialTheme.colors.primary,
+            textColor = MaterialTheme.colors.onPrimary
         ),
         visualTransformation = visualTransformation,
         keyboardOptions = KeyboardOptions.Default.copy(keyboardType = keyboardType),

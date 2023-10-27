@@ -20,8 +20,8 @@ import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
 import com.eritlab.jexmon.presentation.common.CustomTextField
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
 import com.eritlab.jexmon.presentation.graphs.auth_graph.AuthScreen
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @Composable
@@ -54,7 +54,7 @@ fun ForgetPasswordScreen(navController: NavController) {
             Box(modifier = Modifier.weight(1.0f)) {
                 Text(
                     text = "Forget Password",
-                    color = MaterialTheme.colors.TextColor,
+                    color = MaterialTheme.colors.onPrimary,
                     fontSize = 18.sp
                 )
             }
@@ -65,7 +65,7 @@ fun ForgetPasswordScreen(navController: NavController) {
         Text(text = "Forget Password", fontSize = 26.sp, fontWeight = FontWeight.Bold)
         Text(
             text = "Please enter your email and we will send\nyou a link to return your account",
-            color = MaterialTheme.colors.TextColor,
+            color = MaterialTheme.colors.onPrimary,
             textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(150.dp))
@@ -104,10 +104,10 @@ fun ForgetPasswordScreen(navController: NavController) {
                     .padding(top = 30.dp, bottom = 30.dp),
                 horizontalArrangement = Arrangement.Center
             ) {
-                Text(text = "Don't have an account? ", color = MaterialTheme.colors.TextColor)
+                Text(text = "Don't have an account? ", color = MaterialTheme.colors.onPrimary)
                 Text(
                     text = "Sign Up",
-                    color = MaterialTheme.colors.PrimaryColor,
+                    color = MaterialTheme.colors.primary,
                     modifier = Modifier.clickable {
                         navController.navigate(AuthScreen.SignUpScreen.route)
                     })

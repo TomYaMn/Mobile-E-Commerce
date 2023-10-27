@@ -29,9 +29,9 @@ import com.eritlab.jexmon.presentation.common.CustomTextField
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
 import com.eritlab.jexmon.presentation.common.component.ErrorSuggestion
 import com.eritlab.jexmon.presentation.graphs.auth_graph.AuthScreen
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @Composable
@@ -68,7 +68,7 @@ fun LoginScreen(navController: NavController) {
                 }
             }
             Box(modifier = Modifier.weight(1.0f)) {
-                Text(text = "Sign in", color = MaterialTheme.colors.TextColor, fontSize = 18.sp)
+                Text(text = "Sign in", color = MaterialTheme.colors.onPrimary, fontSize = 18.sp)
             }
 
 
@@ -77,7 +77,7 @@ fun LoginScreen(navController: NavController) {
         Text(text = "Welcome Back", fontSize = 26.sp, fontWeight = FontWeight.Bold)
         Text(
             text = "Sign in with your email or password\nor continue with social media.",
-            color = MaterialTheme.colors.TextColor,
+            color = MaterialTheme.colors.onPrimary,
             textAlign = TextAlign.Center
         )
         Spacer(modifier = Modifier.height(50.dp))
@@ -128,11 +128,11 @@ fun LoginScreen(navController: NavController) {
                     },
                     colors = CheckboxDefaults.colors(checkedColor = MaterialTheme.colors.primary)
                 )
-                Text(text = "Remember me", color = MaterialTheme.colors.TextColor, fontSize = 14.sp)
+                Text(text = "Remember me", color = MaterialTheme.colors.onPrimary, fontSize = 14.sp)
             }
             Text(
                 text = "Forget Password",
-                color = MaterialTheme.colors.TextColor,
+                color = MaterialTheme.colors.onPrimary,
                 style = TextStyle(textDecoration = TextDecoration.Underline),
                 modifier = Modifier.clickable {
                     navController.navigate(AuthScreen.ForgetPasswordScreen.route)
@@ -167,7 +167,7 @@ fun LoginScreen(navController: NavController) {
                     modifier = Modifier
                         .size(50.dp)
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = CircleShape
                         ),
                     contentAlignment = Alignment.Center
@@ -181,7 +181,7 @@ fun LoginScreen(navController: NavController) {
                     modifier = Modifier
                         .size(50.dp)
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = CircleShape
                         )
                         .clickable {
@@ -198,7 +198,7 @@ fun LoginScreen(navController: NavController) {
                     modifier = Modifier
                         .size(50.dp)
                         .background(
-                            MaterialTheme.colors.PrimaryLightColor,
+                            MaterialTheme.colors.surface,
                             shape = CircleShape
                         )
                         .clickable {
@@ -219,10 +219,10 @@ fun LoginScreen(navController: NavController) {
                     .padding(top = 30.dp),
                 horizontalArrangement = Arrangement.Center
             ) {
-                Text(text = "Don't have an account? ", color = MaterialTheme.colors.TextColor)
+                Text(text = "Don't have an account? ", color = MaterialTheme.colors.onPrimary)
                 Text(
                     text = "Sign Up",
-                    color = MaterialTheme.colors.PrimaryColor,
+                    color = MaterialTheme.colors.primary,
                     modifier = Modifier.clickable {
                         navController.navigate(AuthScreen.SignUpScreen.route)
                     })

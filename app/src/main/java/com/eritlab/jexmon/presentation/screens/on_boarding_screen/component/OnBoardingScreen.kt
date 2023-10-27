@@ -21,8 +21,8 @@ import androidx.navigation.NavController
 import com.eritlab.jexmon.R
 import com.eritlab.jexmon.presentation.common.CustomDefaultBtn
 import com.eritlab.jexmon.presentation.graphs.auth_graph.AuthScreen
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.rememberPagerState
 
@@ -71,7 +71,7 @@ fun SplashScreen(navController: NavController) {
                     Text(
                         text = "JEXMON",
                         fontSize = 50.sp,
-                        color = MaterialTheme.colors.PrimaryColor,
+                        color = MaterialTheme.colors.primary,
                         fontWeight = FontWeight.Bold,
                         fontFamily = FontFamily(Font(R.font.muli_bold)),
                     )
@@ -84,14 +84,14 @@ fun SplashScreen(navController: NavController) {
                                     withStyle(
                                         style = SpanStyle(
                                             fontWeight = FontWeight.Bold,
-                                            color = MaterialTheme.colors.TextColor,
+                                            color = MaterialTheme.colors.onPrimary
                                         )
                                     ) {
                                         append("Jexmon.")
                                     }
                                     append(" Let's Shop!")
                                 },
-                                color = MaterialTheme.colors.TextColor,
+                                color = MaterialTheme.colors.onPrimary,
                                 fontSize = 18.sp,
                                 textAlign = TextAlign.Center,
                                 fontFamily = FontFamily(Font(R.font.muli)),
@@ -100,7 +100,7 @@ fun SplashScreen(navController: NavController) {
                         1 -> {
                             Text(
                                 text = "We help people connect with store\naround Bangladesh",
-                                color = MaterialTheme.colors.TextColor,
+                                color = MaterialTheme.colors.onPrimary,
                                 fontSize = 18.sp,
                                 textAlign = TextAlign.Center
                             )
@@ -108,7 +108,7 @@ fun SplashScreen(navController: NavController) {
                         else -> {
                             Text(
                                 text = "We show easy way to shop.\nJust stay at home with us",
-                                color = MaterialTheme.colors.TextColor,
+                                color = MaterialTheme.colors.onPrimary,
                                 fontSize = 18.sp,
                                 textAlign = TextAlign.Center
                             )

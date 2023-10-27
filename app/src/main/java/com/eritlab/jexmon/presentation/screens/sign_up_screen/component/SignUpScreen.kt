@@ -28,9 +28,9 @@ import com.eritlab.jexmon.presentation.common.CustomTextField
 import com.eritlab.jexmon.presentation.common.component.DefaultBackArrow
 import com.eritlab.jexmon.presentation.common.component.ErrorSuggestion
 import com.eritlab.jexmon.presentation.graphs.auth_graph.AuthScreen
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
-import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryColor
+//import com.eritlab.jexmon.presentation.ui.theme.PrimaryLightColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 
 @OptIn(ExperimentalAnimationApi::class)
@@ -86,7 +86,7 @@ fun SignUpScreen(navController: NavController) {
                     Box(modifier = Modifier.weight(1.0f)) {
                         Text(
                             text = "Sign Up",
-                            color = MaterialTheme.colors.TextColor,
+                            color = MaterialTheme.colors.onPrimary,
                             fontSize = 18.sp
                         )
                     }
@@ -97,7 +97,7 @@ fun SignUpScreen(navController: NavController) {
                 Text(text = "Register Account", fontSize = 26.sp, fontWeight = FontWeight.Bold)
                 Text(
                     text = "Complete your details or continue\nwith social media.",
-                    color = MaterialTheme.colors.TextColor,
+                    color = MaterialTheme.colors.onPrimary,
                     textAlign = TextAlign.Center
                 )
                 Spacer(modifier = Modifier.height(50.dp))
@@ -182,7 +182,7 @@ fun SignUpScreen(navController: NavController) {
                             modifier = Modifier
                                 .size(50.dp)
                                 .background(
-                                    MaterialTheme.colors.PrimaryLightColor,
+                                    MaterialTheme.colors.surface,
                                     shape = CircleShape
                                 ),
                             contentAlignment = Alignment.Center
@@ -196,7 +196,7 @@ fun SignUpScreen(navController: NavController) {
                             modifier = Modifier
                                 .size(50.dp)
                                 .background(
-                                    MaterialTheme.colors.PrimaryLightColor,
+                                    MaterialTheme.colors.surface,
                                     shape = CircleShape
                                 )
                                 .clickable {
@@ -213,7 +213,7 @@ fun SignUpScreen(navController: NavController) {
                             modifier = Modifier
                                 .size(50.dp)
                                 .background(
-                                    MaterialTheme.colors.PrimaryLightColor,
+                                    MaterialTheme.colors.surface,
                                     shape = CircleShape
                                 )
                                 .clickable {
@@ -240,17 +240,17 @@ fun SignUpScreen(navController: NavController) {
                     ) {
                         Text(
                             text = "By continuing you confirm that you agree",
-                            color = MaterialTheme.colors.TextColor
+                            color = MaterialTheme.colors.onPrimary
                         )
                         Row()
                         {
                             Text(
                                 text = "with our ",
-                                color = MaterialTheme.colors.TextColor,
+                                color = MaterialTheme.colors.onPrimary,
                             )
                             Text(
                                 text = "Terms & Condition",
-                                color = MaterialTheme.colors.PrimaryColor,
+                                color = MaterialTheme.colors.primary,
                                 modifier = Modifier.clickable {
 
                                 })
@@ -283,7 +283,7 @@ fun SignUpScreen(navController: NavController) {
                     Box(modifier = Modifier.weight(1.0f)) {
                         Text(
                             text = "Sign Up",
-                            color = MaterialTheme.colors.TextColor,
+                            color = MaterialTheme.colors.onPrimary,
                             fontSize = 18.sp
                         )
                     }
@@ -294,7 +294,7 @@ fun SignUpScreen(navController: NavController) {
                 Text(text = "Complete Profile", fontSize = 26.sp, fontWeight = FontWeight.Bold)
                 Text(
                     text = "Complete your details or continue\nwith social media.",
-                    color = MaterialTheme.colors.TextColor,
+                    color = MaterialTheme.colors.onPrimary,
                     textAlign = TextAlign.Center
                 )
                 Spacer(modifier = Modifier.height(50.dp))
@@ -391,17 +391,17 @@ fun SignUpScreen(navController: NavController) {
                 ) {
                     Text(
                         text = "By continuing you confirm that you agree",
-                        color = MaterialTheme.colors.TextColor
+                        color = MaterialTheme.colors.onPrimary
                     )
                     Row()
                     {
                         Text(
                             text = "with our ",
-                            color = MaterialTheme.colors.TextColor,
+                            color = MaterialTheme.colors.onPrimary,
                         )
                         Text(
                             text = "Terms & Condition",
-                            color = MaterialTheme.colors.PrimaryColor,
+                            color = MaterialTheme.colors.primary,
                             modifier = Modifier.clickable {
 
                             })

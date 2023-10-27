@@ -14,7 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.eritlab.jexmon.R
-import com.eritlab.jexmon.presentation.ui.theme.TextColor
+//import com.eritlab.jexmon.presentation.ui.theme.TextColor
 
 @Composable
 fun ErrorSuggestion(message: String) {
@@ -27,6 +27,6 @@ fun ErrorSuggestion(message: String) {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Image(painter = painterResource(id = R.drawable.error), contentDescription = "Error Icon")
-        Text(text = message, color = MaterialTheme.colors.TextColor, fontSize = 14.sp)
+        Text(text = message, color = MaterialTheme.colors.onPrimary, fontSize = 14.sp)
     }
 }
